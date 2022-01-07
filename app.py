@@ -39,23 +39,19 @@ with main_body:
     - **Moscow**
     - **Other**
     """)
-    channel = st.text_input('Channel')
-    # st.write('The current number is ', s_length)
-
-    fresh = st.number_input('Insert annual spending (RUB) on fresh products')
-    # st.write('The current number is ', s_width)
-
-    milk = st.number_input('Insert annual spending (RUB) on milk products')
-    # st.write('The current number is ', p_length)
-
-    grocery = st.number_input('Insert annual spending (RUB) on grocery products')
-    # st.write('The current number is ', p_width)
-    frozen = st.number_input('Insert  annual spending (RUB) on frozen products')
-    # st.write('The current number is ', p_width)
-    det_paper = st.number_input('Insert annual spending (RUB) on detergents and paper products')
-    # st.write('The current number is ', p_width)
-    delic = st.number_input('Insert annual spending (RUB) on delicate Essential products')
-    # st.write('The current number is ', p_width)
+    channel = st.text_input('CHANNEL')
+    
+    fresh = st.number_input('Annual spending on FRESH products')
+    
+    milk = st.number_input('Annual spending on MILK products')
+    
+    grocery = st.number_input('Annual spending on GROCERY products')
+    
+    frozen = st.number_input('Annual spending on FROZEN products')
+    
+    det_paper = st.number_input('Annual spending on DETERGENTS and PAPER products')
+    
+    delic = st.number_input('Annual spending on DELICATESSEN products')
 
     btn = st.button('Predict Class')
     if btn:
